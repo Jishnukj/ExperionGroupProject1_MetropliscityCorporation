@@ -16,10 +16,9 @@ namespace MetropolisCityCorporation.DataAccess
         public DbSet<Street> Streets { get; set; }
         public DbSet<User> Users { get; set; }
 
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Host=localhost;Database=MetropolisDb;Username=postgres;Password=Parvathy@123";
+            string connectionString = "Host=localhost;Database=MetropolisDb;Username=postgres;Password=postgres";
             optionsBuilder.UseNpgsql(connectionString);
 
         }

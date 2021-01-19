@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\bin\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.deps.json
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\bin\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.dll
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\bin\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.pdb
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.AssemblyInfo.cs
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.dll
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.pdb
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\bin\Debug\netcoreapp3.1\MetropolisCityCorporation.DataAccess.dll
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\bin\Debug\netcoreapp3.1\MetropolisCityCorporation.DataAccess.pdb
+C:\Users\HP\Desktop\webapi\MetropolisCityCorporation\MetropolisCityCorporation.BusinessService\obj\Debug\netcoreapp3.1\MetropolisCityCorporation.BusinessService.csproj.CopyComplete

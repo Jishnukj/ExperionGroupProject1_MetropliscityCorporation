@@ -14,18 +14,18 @@ namespace MetropolisCityCorporation.DataAccess.Repositories
             _dbContext = dbContext;
         }
 
-        public void Add(Activity itemEntity)
+        public void Add(Activity activityEntity)
         {
-            _dbContext.Activities.Add(itemEntity);
+            _dbContext.Activities.Add(activityEntity);
             _dbContext.SaveChanges();
         }
 
         public bool Delete(int id)
         {
-           Activity item = _dbContext.Activities.Where(e => e.Id == id).FirstOrDefault();
-            if (item != null)
+           Activity activity = _dbContext.Activities.Where(e => e.Id == id).FirstOrDefault();
+            if (activity != null)
             {
-                _dbContext.Remove(item);
+                _dbContext.Remove(activity);
                 _dbContext.SaveChanges();
                 return true;
             }
@@ -35,38 +35,30 @@ namespace MetropolisCityCorporation.DataAccess.Repositories
             }
         }
 
-        public List<Activity> GetItems()
+        public List<Activity> GetActivities()
         {
             return _dbContext.Activities.ToList();
-        }
-
-        public List<Activity> GetAllItems()
-        {
-            return _dbContext.Activities.ToList();
-        }
-        public Activity Update(Activity itemChange, int id)
-        {
-            Activity item = _dbContext.Activities.Where(x => x.Id == id).FirstOrDefault();
-            if (item != null)
-            {
-                item.Name = itemChange.Name;
-                item.Type = itemChange.Type;
-                item.Description = itemChange.Description;
-                item.Date = itemChange.Date;
-                _dbContext.SaveChanges();
-
-            }
-            return item;
         }
 
         public List<Activity> GetAllActivities()
         {
-            throw new NotImplementedException();
+            return _dbContext.Activities.ToList();
+        }
+        public Activity Update(Activity activityChange, int id)
+        {
+            Activity activity = _dbContext.Activities.Where(x => x.Id == id).FirstOrDefault();
+            if (activity != null)
+            {
+                activity.Name = activityChange.Name;
+                activity.Type = activityChange.Type;
+                activity.Description = activityChange.Description;
+                activity.Date = activityChange.Date;
+                _dbContext.SaveChanges();
+
+            }
+            return activity;
         }
 
-        public List<Activity> GetActivities()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
