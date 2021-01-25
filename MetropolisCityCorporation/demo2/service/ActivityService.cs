@@ -67,7 +67,7 @@ namespace demo2.service
         }
 
 
-        // newpart
+    
         public IEnumerable<ActivityDto> GetAllActivities()
         {
 
