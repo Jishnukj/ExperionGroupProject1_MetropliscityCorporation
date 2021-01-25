@@ -68,7 +68,7 @@ namespace demo2.service
 
 
         // newpart
-        public IEnumerable<ActivityDto> GetAllProducts()
+        public IEnumerable<ActivityDto> GetAllActivities()
         {
 
             var products = _activityRepository.GetAllActivities();
