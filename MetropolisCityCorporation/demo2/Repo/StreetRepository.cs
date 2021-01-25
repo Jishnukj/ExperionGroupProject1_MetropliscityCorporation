@@ -13,14 +13,11 @@ namespace demo2.Repo
         {
             _dbContext = dbContext;
         }
-        public List<Streets> GetAllOrders()
+        public List<Streets> GetAllStreets()
         {
             return _dbContext.Streets.ToList();
         }
 
-        public List<Streets> GetAllStreets()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
