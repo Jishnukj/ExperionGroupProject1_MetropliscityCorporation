@@ -10,8 +10,8 @@ namespace MetroPolisBusinessService
     {
         List<ActivityDto> GetActivities();
         ActivityDto GetActivity(int id);
-        void Add(Activity newActivity);
-        void Update(Activity activityChange, int id);
-        void Delete(int id);
+        Activity Add(Activity newActivity);
+        Activity Update(Activity activityChange, int id);
+        bool Delete(int id);
     }
 }

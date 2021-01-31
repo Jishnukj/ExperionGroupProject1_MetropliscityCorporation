@@ -57,17 +57,39 @@ namespace MetroPolisBusinessService
 
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
-            _activityRepository.Delete(id);
+            var activity = _activityRepository.GetActivity(id);
+            if (activity != null)
+            {
+                _activityRepository.Delete(id);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        public void Update(Activity activityChange, int id)
+        public Activity Update(Activity activityChange, int id)
         {
-            _activityRepository.Update(activityChange, id);
+            var activity = _activityRepository.GetActivity(id);
+            List<Activity> data = new List<Activity>();
+            data = _activityRepository.GetAllActivities(); // fetch the entire database
+            int count = data.Where(x => x.Date == activityChange.Date && activityChange.IsStreetClosed == true).Count();
+
+            if(count==6 && activity.IsStreetClosed==false && activityChange.IsStreetClosed == true)
+            {
+                throw new InvalidOperationException("Closed street count is greater than 6");
+            }
+            else
+            {
+                _activityRepository.Update(activityChange, id);
+                return activityChange;
+            }
 
         }
 
-        public void Add(Activity New_data)
+        public Activity Add(Activity New_data)
         {
             List<Activity> data = new List<Activity>();
             data = _activityRepository.GetAllActivities(); // fetch the entire database
@@ -80,11 +102,12 @@ namespace MetroPolisBusinessService
             } 
             else if (count >= 6)
             {
-                throw new InvalidOperationException("count is greater than 6");
+                throw new InvalidOperationException("Closed street count is greater than 6");
             }
             else
             {
                 _activityRepository.Add(New_data);
+                return New_data;
             }
         }
 
