@@ -5530,11 +5530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "projectUniqueName": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
       "projectName": "MetroPolisCity",
-      "projectPath": "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
       "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity\\obj\\",
+      "outputPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5551,8 +5551,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
-              "projectPath": "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
+            "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+              "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
             }
           }
         }

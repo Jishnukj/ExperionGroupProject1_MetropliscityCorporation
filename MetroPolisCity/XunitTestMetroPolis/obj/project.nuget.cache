@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kao3cHQMfEuo2FzfJeDglgVG4hQvpmGWkJp9scyy4E+U6c1S9Yz/lvaypSDVuMtIO1ZF+jrYtJ0DcuYx6jqSsw==",
+  "dgSpecHash": "fGophBfeFAokfY/2KMXZJX+GMsm8vtHHmaC0HQ6fs303hhfRwHMBO+3DWtqOl9KoE9BaW1Tc9nUwpOpldpo2wg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jishn\\Documents\\jishnu\\MetroPolisCity\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
+  "projectFilePath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jishn\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\jishn\\.nuget\\packages\\autofac.extras.moq\\6.0.0\\autofac.extras.moq.6.0.0.nupkg.sha512",
