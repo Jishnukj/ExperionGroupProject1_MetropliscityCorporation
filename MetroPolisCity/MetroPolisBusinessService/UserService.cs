@@ -9,8 +9,8 @@ namespace MetroPolisBusinessService
 {
     public class UserService:IUserService
     {
-        private readonly UserRepo _userRepository;
-        public UserService(UserRepo userRepository)
+        private readonly IUserRepo _userRepository;
+        public UserService(IUserRepo userRepository)
         {
             _userRepository = userRepository;
         }

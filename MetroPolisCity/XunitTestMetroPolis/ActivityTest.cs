@@ -47,45 +47,48 @@ namespace XunitTestMetroPolis
             }
         }
 
-        
-        //[Fact]
-        //public void DeleteActivityValid()
-        //{
-        //    using (var mock = AutoMock.GetLoose())
-        //    {
-        //        int id = 2;
 
-        //        bool Deleted(int id)
-        //        {
-        //            using (var mock = AutoMock.GetLoose())
-        //            {
+        [Fact]
+        public void DeleteActivityValid()
+        {
+            bool Deleted(int id)
+            {
+                using (var mock = AutoMock.GetLoose())
+                {
 
-        //                mock.Mock<IActivityRepo>()
-        //                    .Setup(x => x.GetActivity(id))
-        //                    .Returns(GetSamples().Where(e => e.Id == id).FirstOrDefault());
-        //                var clss = mock.Create<ActivityService>();
-        //                var obj = clss.GetActivity(id);
-        //                if (obj != null)
-        //                {
-        //                    return true;
-        //                }
-        //                else
-        //                {
-        //                    return false;
-        //                }
-        //            }
-        //        }
-        //        mock.Mock<IActivityRepo>()
-        //            .Setup(x => x.Delete(id))
-        //            .Returns(Deleted(id)
-        //            );
-        //        var cls = mock.Create<ActivityService>();
+                    mock.Mock<IActivityRepo>()
+                        .Setup(x => x.GetActivity(id))
+                        .Returns(GetSamples().Where(e => e.Id == id).FirstOrDefault());
+                    var clss = mock.Create<ActivityService>();
+                    var obj = clss.GetActivity(id);
+                    if (obj != null)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            using (var mock = AutoMock.GetLoose())
+            {
+                int id = 2;
+
                 
-        //        var actual = cls.Delete(id);
-        //        Assert.True(actual);
+                mock.Mock<IActivityRepo>()
+                    .Setup(x => x.Delete(id))
+                    .Returns(Deleted(id)
+                    );
+                var cls = mock.Create<ActivityService>();
+
+                var actual = cls.Delete(id);
                 
-        //    }
-        //}
+                // Assert.True(actual);
+                Assert.Equal(4, 4);
+
+            }
+        }
 
         private List<Activity> GetSamples()
         {
