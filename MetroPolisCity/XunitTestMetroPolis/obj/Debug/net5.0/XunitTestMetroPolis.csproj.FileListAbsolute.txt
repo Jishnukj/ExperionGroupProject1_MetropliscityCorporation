@@ -306,3 +306,4 @@ C:\Users\jishn\Documents\forgit\ExperionGroupProject1_MetropliscityCorporation\M
 C:\Users\jishn\Documents\forgit\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\XunitTestMetroPolis\obj\Debug\net5.0\ref\XunitTestMetroPolis.dll
 C:\Users\jishn\Documents\forgit\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\XunitTestMetroPolis\obj\Debug\net5.0\XunitTestMetroPolis.pdb
 C:\Users\jishn\Documents\forgit\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\XunitTestMetroPolis\obj\Debug\net5.0\XunitTestMetroPolis.genruntimeconfig.cache
+C:\Users\jishn\Documents\forgit\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\XunitTestMetroPolis\bin\Debug\net5.0\FluentAssertions.dll
