@@ -16,6 +16,7 @@ namespace XunitTestMetroPolis
     public class ActivityTest
     {
         private Mock<IActivityRepo> mockActivityRepo = new Mock<IActivityRepo>();
+        private Mock<Activity> mockActivity = new Mock<Activity>();
 
         [Fact]
         public void GetallActivity_Valid()
@@ -92,6 +93,39 @@ namespace XunitTestMetroPolis
 
         }
 
+        [Fact]
+        public void AddValid_Return_True()
+        {
+            var activity = activitydemo;
+            var Response = true;
+            mockActivityRepo.Setup(x => x.GetAllActivities())
+               .Returns(GetSamples());
+            mockActivityRepo.Setup(x => x.Add(It.IsAny<Activity>()))
+                .Returns(Response);
+            var service = new ActivityService(mockActivityRepo.Object);
+            //Act
+            var result = service.Add(activitydemo);
+            //Assert
+            result.Should().Be(Response);
+
+        }
+
+        [Fact]
+        public void AddInValid_Return_False()
+        {
+            var activity = activitydemo;
+            var Response = false;
+            mockActivityRepo.Setup(x => x.GetAllActivities())
+               .Returns(GetSamples());
+            mockActivityRepo.Setup(x => x.Add(It.IsAny<Activity>()))
+                .Returns(Response);
+            var service = new ActivityService(mockActivityRepo.Object);
+            //Act
+            var result = service.Add(activitydemo);
+            //Assert
+            result.Should().Be(Response);
+
+        }
 
 
 
