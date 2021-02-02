@@ -89,7 +89,7 @@ namespace MetroPolisBusinessService
 
         }
 
-        public Activity Add(Activity New_data)
+        public bool Add(Activity New_data)
         {
             List<Activity> data = new List<Activity>();
             data = _activityRepository.GetAllActivities(); // fetch the entire database
@@ -98,16 +98,18 @@ namespace MetroPolisBusinessService
 
             if (Total >= 15)
             {
-                throw new InvalidOperationException("total is greater than 15");
-            } 
+                //total is greater than 15
+                return false;
+            }
             else if (count >= 6)
             {
-                throw new InvalidOperationException("Closed street count is greater than 6");
+                //Closed street count is greater than 6
+                return false;
             }
             else
             {
                 _activityRepository.Add(New_data);
-                return New_data;
+                return true;
             }
         }
 

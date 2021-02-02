@@ -18,7 +18,7 @@ namespace XunitTestMetroPolis
         private Mock<IActivityRepo> mockActivityRepo = new Mock<IActivityRepo>();
 
         [Fact]
-        public void GetallActivityValid()
+        public void GetallActivity_Valid()
         {
             mockActivityRepo.Setup(x => x.GetAllActivities())
                 .Returns(GetSamples());
@@ -30,7 +30,7 @@ namespace XunitTestMetroPolis
             Assert.Equal(expected[1].Name, actual[1].Name);
         }
         [Fact]
-        public void GetActivityValid()
+        public void GetActivity_Valid()
         {
             int id = 2;
             var activityDto = new ActivityDto

@@ -14,11 +14,11 @@ namespace MetroPolisDataService.Repo
             _dbContext = dbContext;
         }
 
-        public Activity Add(Activity activityEntity)
+        public bool Add(Activity activityEntity)
         {
             _dbContext.Activities.Add(activityEntity);
             _dbContext.SaveChanges();
-            return activityEntity;
+            return true;
         }
 
         public bool Delete(int id)
