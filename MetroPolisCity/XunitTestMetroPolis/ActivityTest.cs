@@ -110,24 +110,7 @@ namespace XunitTestMetroPolis
 
         }
 
-        [Fact]
-        public void AddInValid_Return_False()
-        {
-            var activity = activitydemo;
-            var Response = false;
-            mockActivityRepo.Setup(x => x.GetAllActivities())
-               .Returns(GetSamples());
-            mockActivityRepo.Setup(x => x.Add(It.IsAny<Activity>()))
-                .Returns(Response);
-            var service = new ActivityService(mockActivityRepo.Object);
-            //Act
-            var result = service.Add(activitydemo);
-            //Assert
-            result.Should().Be(Response);
-
-        }
-
-
+        
 
         private List<Activity> GetSamples()
         {
