@@ -9,7 +9,7 @@ namespace MetroPolisDataService.Repo
     {
         List<Activity> GetAllActivities();
         Activity GetActivity(int id);
-        void Add(Activity itemEntity);
+        Activity Add(Activity itemEntity);
         Activity Update(Activity itemChange, int id);
         bool Delete(int id);
         

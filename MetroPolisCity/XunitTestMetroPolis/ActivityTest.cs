@@ -33,15 +33,25 @@ namespace XunitTestMetroPolis
         public void GetActivityValid()
         {
             int id = 2;
+            var activityDto = new ActivityDto
+            {
+                Id = 2,
+                Date = DateTime.Now,
+                Description = "nothing",
+                IsStreetClosed = false,
+                Name = "Thrissur",
+                StreetId = 213,
+                StreetName = "Thrissur",
+                Type = "emergency"
+            };
             var activity = GetSamples()[id];
             mockActivityRepo.Setup(x => x.GetActivity(It.IsAny<int>()))
                 .Returns(activity);
             var cls = new ActivityService(mockActivityRepo.Object);
-            var expected = GetSamples().FirstOrDefault(e => e.Id == id);
-            var actual = cls.GetActivity(id);
-            Assert.True(actual != null);
-            Assert.Equal(expected.StreetName, actual.StreetName);
-            Assert.Equal(expected.Name, actual.Name);
+            var result = cls.GetActivity(id);
+            result.Id.Should().Be(activity.Id);
+            result.Name.Should().Be(activity.Name);
+
         }
         [Fact]
         public void Delete_WithValidId_ReturnTrue()
@@ -81,6 +91,8 @@ namespace XunitTestMetroPolis
             result.Should().Be(deleteResponse);
 
         }
+
+
 
 
         private List<Activity> GetSamples()
