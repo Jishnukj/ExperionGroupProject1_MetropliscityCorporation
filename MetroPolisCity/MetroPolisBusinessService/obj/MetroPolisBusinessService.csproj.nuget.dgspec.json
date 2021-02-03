@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {}
+    "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+    "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
+        "projectUniqueName": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
         "projectName": "MetroPolisBusinessService",
-        "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
-        "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\obj\\",
+        "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
+        "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
-                "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj"
+              "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
+                "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj"
               }
             }
           }
@@ -62,17 +62,17 @@
         }
       }
     },
-    "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
+    "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "projectUniqueName": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
         "projectName": "MetroPolisDataService",
-        "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
-        "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\obj\\",
+        "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

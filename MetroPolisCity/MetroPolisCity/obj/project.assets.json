@@ -5525,19 +5525,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jishn\\.nuget\\packages\\": {}
+    "C:\\Users\\joshg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "projectUniqueName": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
       "projectName": "MetroPolisCity",
-      "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
-      "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\obj\\",
+      "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisCity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5551,8 +5551,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
-              "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
+            "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+              "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
             }
           }
         }

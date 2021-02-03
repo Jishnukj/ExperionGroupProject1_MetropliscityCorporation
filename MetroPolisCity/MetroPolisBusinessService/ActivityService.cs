@@ -70,7 +70,7 @@ namespace MetroPolisBusinessService
                 return false;
             }
         }
-        public Activity Update(Activity activityChange, int id)
+        public bool Update(Activity activityChange, int id)
         {
             var activity = _activityRepository.GetActivity(id);
             List<Activity> data = new List<Activity>();
@@ -79,12 +79,12 @@ namespace MetroPolisBusinessService
 
             if(count==6 && activity.IsStreetClosed==false && activityChange.IsStreetClosed == true)
             {
-                throw new InvalidOperationException("Closed street count is greater than 6");
+                return false;
             }
             else
             {
                 _activityRepository.Update(activityChange, id);
-                return activityChange;
+                return true;
             }
 
         }
@@ -113,7 +113,6 @@ namespace MetroPolisBusinessService
             }
         }
 
-       
-        
+      
     }
 }

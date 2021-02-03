@@ -46,7 +46,7 @@ namespace MetroPolisDataService.Repo
         {
             return _dbContext.Activities.ToList();
         }
-        public Activity Update(Activity activityChange, int id)
+        public bool Update(Activity activityChange, int id)
         {
             Activity activity = _dbContext.Activities.Where(x => x.Id == id).FirstOrDefault();
             if (activity != null)
@@ -59,9 +59,13 @@ namespace MetroPolisDataService.Repo
                 activity.Description = activityChange.Description;
                 activity.Date = activityChange.Date;
                 _dbContext.SaveChanges();
+                return true;
 
             }
-            return activity;
+            else
+            {
+                return false;
+            }
         }
     }
 }

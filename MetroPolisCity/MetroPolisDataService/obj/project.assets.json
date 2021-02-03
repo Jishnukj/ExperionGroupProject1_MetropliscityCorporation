@@ -5762,19 +5762,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jishn\\.nuget\\packages\\": {}
+    "C:\\Users\\joshg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+      "projectUniqueName": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
       "projectName": "MetroPolisDataService",
-      "projectPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
-      "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishn\\Documents\\forgit\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\obj\\",
+      "projectPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+      "packagesPath": "C:\\Users\\joshg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joshg\\OneDrive\\Desktop\\Metropolis\\MetroPolisCity\\MetroPolisDataService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joshg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

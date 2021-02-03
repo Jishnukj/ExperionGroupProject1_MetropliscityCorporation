@@ -109,8 +109,28 @@ namespace XunitTestMetroPolis
             result.Should().Be(Response);
 
         }
+        [Fact]
+        public void UpdateActivity_WithValidID_ReturnsTrue()
+        {
+            var activity = activitydemo;
+            var Response = true;
 
-        
+            mockActivityRepo.Setup(x => x.GetAllActivities())
+                .Returns(GetSamples());
+            mockActivityRepo.Setup(x => x.Update(It.IsAny<Activity>(), It.IsAny<int>()))
+                            .Returns(Response);
+
+
+            var service = new ActivityService(mockActivityRepo.Object);
+            //Act
+            var result = service.Update(activitydemo,1);
+            //Assert
+            result.Should().Be(Response);
+
+
+         }
+
+
 
         private List<Activity> GetSamples()
         {
