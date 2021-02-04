@@ -11,7 +11,7 @@
           <a class="menu" href="#footer">About us</a>
         </th>
         <th>
-          <a class="menu">Services</a>
+          <a (click)="serviceHide()" class="menu">Services</a>
         </th>
         <th>
           <a class="menu" href="#guid">Guidlines</a>
@@ -21,14 +21,29 @@
         </th>
       </table>
     </div>
-    <div id="image">
+    <div id="image" *ngIf="services">
       <app-app-page1-image></app-app-page1-image>          
     </div>
-    <div id="guid">
+    <div id="guid" *ngIf="services">
       <app-app-page1-citizenguid></app-app-page1-citizenguid>
     </div>
-    <div id="footer">
+    <div id="footer" *ngIf="services">
       <app-app-page1-footer></app-app-page1-footer>
     </div>
   </div>
+
+  <!--page 2-->
+    <div *ngIf="!services">
+      <div *ngIf="!login">
+       <app-app-page2></app-app-page2>
+      </div>
+    </div>
+    <!--page 3-->
+    <div *ngIf="!services">
+      <div *ngIf="login">
+        <app-app-page3></app-app-page3>
+      </div>
+    </div>
+    <!--below part is for testing-->
+    <app-app-page3></app-app-page3>
 </body>
