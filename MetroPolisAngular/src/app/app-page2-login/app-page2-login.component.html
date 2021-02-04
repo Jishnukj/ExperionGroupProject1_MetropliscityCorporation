@@ -1,4 +1,12 @@
 <div class="login">
-    <p>app-page2-login works!</p>
-    <button (click)="loginHide()" >Login</button>
+    <form class="form-signin">      
+        <h2 class="form-signin-heading" >Log In</h2>
+        <p>
+        <input type="text" class="form-control" name="username" placeholder="UserName" required="" autofocus="" /><br />
+        <br />
+        <input type="password" class="form-control" name="password" placeholder="Password" required=""/>  <br />    
+        <br />
+        <button (click)="loginHide()" >Login</button> 
+        </p>   
+      </form>
 </div>
