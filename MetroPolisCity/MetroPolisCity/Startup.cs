@@ -1,9 +1,11 @@
 using MetroPolisBusinessService;
+using MetroPolisDataService;
 using MetroPolisDataService.Repo;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -37,7 +39,8 @@ namespace MetroPolisCity
             services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IStreetRepo, StreetRepo>();
 
-
+            services.AddDbContext<ApplicationDbContext>(
+                   options => options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MetroDb;Trusted_Connection=True;"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MetroPolisCity", Version = "v1" });
