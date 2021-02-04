@@ -22,7 +22,7 @@
       </table>
     </div>
     <div id="image" *ngIf="services">
-      <app-app-page1-image></app-app-page1-image>          
+      <app-app-page1-image></app-app-page1-image>
     </div>
     <div id="guid" *ngIf="services">
       <app-app-page1-citizenguid></app-app-page1-citizenguid>
@@ -36,6 +36,9 @@
     <div *ngIf="!services">
       <div *ngIf="!login">
        <app-app-page2></app-app-page2>
+      </div>
+      <div>
+        <app-page2-activity-list></app-page2-activity-list>
       </div>
     </div>
     <!--page 3-->

@@ -1,1 +1,16 @@
-<p>app-page2-activity-list works!</p>
+<h1>Dashboard</h1>
+<hr>
+
+<table id="users">
+    <tr>
+        <th *ngFor = "let column of headers">
+            {{column}}
+        </th>
+    </tr>
+
+    <tr *ngFor = "let row of rows">
+        <td *ngFor = "let column of headers" >
+            {{row[column]}}
+      </td>
+    </tr>
+</table>
