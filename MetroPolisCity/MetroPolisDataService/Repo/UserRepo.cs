@@ -13,9 +13,9 @@ namespace MetroPolisDataService.Repo
         {
             _dbContext = dbContext;
         }
-        public List<User> GetAllUsers()
+        public  List<User>  GetAllUsers()
         {
-            return _dbContext.Users.ToList();
+            return  _dbContext.Users.ToList();
         }
         public User GetUser(int id)
         {

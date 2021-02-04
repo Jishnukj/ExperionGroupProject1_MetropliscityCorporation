@@ -1,3 +1,5 @@
+using MetroPolisBusinessService;
+using MetroPolisDataService.Repo;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,14 @@ namespace MetroPolisCity
         {
 
             services.AddControllers();
+            services.AddScoped<IActivityService, ActivityService>();
+            services.AddScoped<IStreetService, StreetService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IActivityRepo, ActivityRepo>();
+            services.AddScoped<IUserRepo, UserRepo>();
+            services.AddScoped<IStreetRepo, StreetRepo>();
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MetroPolisCity", Version = "v1" });
