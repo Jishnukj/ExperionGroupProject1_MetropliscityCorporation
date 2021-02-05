@@ -38,6 +38,10 @@ namespace MetroPolisCity
             services.AddScoped<IActivityRepo, ActivityRepo>();
             services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IStreetRepo, StreetRepo>();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
 
             services.AddDbContext<ApplicationDbContext>(
                    options => options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MetroDb;Trusted_Connection=True;"));
@@ -59,10 +63,11 @@ namespace MetroPolisCity
 
             app.UseHttpsRedirection();
 
+
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
