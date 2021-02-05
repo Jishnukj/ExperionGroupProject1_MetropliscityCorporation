@@ -1,17 +1,16 @@
-<p>app-page3-addactivity works!</p>
 <header>
   <h3>Add Activity</h3>
 </header> 
 <form 
-#addActivityForm="ngForm"
-(ngSubmit)="onSubmit(addActivityForm.value)">
+[formGroup]="myform" 
+(ngSubmit)="onSubmit(myform.value)">
   <div class="form-group">
     <div class="row">
       <div class="col-25">
         <label for="Name"> Name </label><br>
       </div>
       <div class="col-75"></div>
-        <input required type="text"  name="Name" class="form-control" ngModel>
+        <input required type="text"  name="Name" class="form-control" formControlName="name">
   <br><br>
       </div>
     </div>
@@ -22,7 +21,7 @@
   <label for="Type"> Type </label>
       </div>
       <div class="col-75"></div>
-  <select id="activity-type"  name="Type" class="form-control" ngModel>
+  <select id="activity-type"  name="Type" class="form-control" formControlName="type">
     <option value="Emergency">Emergency</option>
     <option value="Periodic">Periodic</option>
   </select>
@@ -36,7 +35,7 @@
   <label for="Description"> Description </label><br>
       </div>
       <div class="col-75"></div>
-  <textarea  id="Description"  name="Description" cols="30" rows="8" placeholder="Write Something..." class="form-control" ngModel></textarea>
+  <textarea  id="Description"  name="Description" cols="30" rows="8" placeholder="Write Something..." class="form-control" formControlName="description" ></textarea>
   <br><br>
   </div>
   </div>
@@ -47,7 +46,7 @@
     <label for="StreetName">Street Name </label><br>
     </div>
     <div class="col-75"></div>
-    <input required type="text"  name="StreetName" class="form-control" ngModel>
+    <input required type="text"  name="StreetName" class="form-control" formControlName="streetName">
     <br><br>
     </div>
   </div>
@@ -57,7 +56,7 @@
       <div class="col-25">
     <label for="Date">Date of Activity </label><br>
      </div>
-    <input required id="Date"  type="date"  name="Date" class="form-control" ngModel>
+    <input required id="Date"  type="date"  name="Date" class="form-control" formControlName="date">
     <div class="col-75"></div>
     <br><br>
     </div>
@@ -66,12 +65,12 @@
 
     <div class="form-group">
       <label for="Type"> Is street closed? </label>
-      <input type="radio" id="True"  name="Isstreetclosed"  value="True" class="form-control" ngModel>
+      <input type="radio" id="True"  name="isStreetClosed"  value="True" class="form-control" formControlName="isStreetClosed">
       <label for="Type">Yes</label>
-      <input type="radio" id="False"  name="Isstreetclosed"  value="False" class="form-control" ngModel>
+      <input type="radio" id="False"  name="isStreetClosed"  value="False" class="form-control" formControlName="isStreetClosed">
       <label for="Type"> No </label>
       </div>
       <br><br>
 
-    <button type="submit" [disabled]="!addActivityForm.valid">Add</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!myform.valid">Add</button>
 </form>
