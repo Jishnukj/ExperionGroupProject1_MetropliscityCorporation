@@ -12,6 +12,8 @@ import { AppPage2Component } from './app-page2/app-page2.component';
 import { AppPage2ActivityListComponent } from './app-page2-activity-list/app-page2-activity-list.component';
 import { AppPage3Component } from './app-page3/app-page3.component';
 import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-addactivity.component';
+import { ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]
