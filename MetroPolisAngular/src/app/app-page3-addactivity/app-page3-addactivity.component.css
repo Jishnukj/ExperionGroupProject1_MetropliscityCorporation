@@ -1,62 +1,77 @@
 input[type=text],select, textarea{
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    float: right;
-    margin-right: 500px;
-  }
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+  margin-right: 500px;
+}
+
+button[type=submit]:disabled {
+  background-color: #333;
+  color: #666;
+  cursor: default;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=date]{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=radio]{
   
-  .col-25 {
-    float: left;
-    width: 10%;
-    margin-top: 6px;
-  }
+  display      : inline-block;
+  margin-left  : 28px;
+  padding-left : 28px;
+}
 
-  .col-75 {
-    float: left;
-    width: 65%;
-    margin-top: 6px;
-  }
+.ng-invalid:not(.ng-pristine):not(.required-invalid) {
+  border: 1px solid #d93a3e;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+input[required].ng-invalid {
+  border-right: 5px solid #d93a3e;
+}
 
-  input[type=date]{
-    width: 50%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-
-  input[type=radio]{
-    
-    display      : inline-block;
-    margin-left  : 28px;
-    padding-left : 28px;
-  }
-  
-  .form-control.ng-touched.ng-invalid{
-    border: 2px solid red;
-  }
+input[required]:not(.required-invalid),
+input[required].ng-invalid:not(.required-invalid) {
+  border-right: 5px solid #37ad79;
+}

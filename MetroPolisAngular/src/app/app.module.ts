@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppPage1CitizenguidComponent } from './app-page1-citizenguid/app-page1-citizenguid.component';
@@ -12,7 +12,7 @@ import { AppPage2Component } from './app-page2/app-page2.component';
 import { AppPage2ActivityListComponent } from './app-page2-activity-list/app-page2-activity-list.component';
 import { AppPage3Component } from './app-page3/app-page3.component';
 import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-addactivity.component';
-import { ReactiveFormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { ReactiveFormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule
   ],
   providers: [ItemService],
   bootstrap: [AppComponent]
