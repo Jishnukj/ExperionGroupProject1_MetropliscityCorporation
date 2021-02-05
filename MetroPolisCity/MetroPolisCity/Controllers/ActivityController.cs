@@ -1,5 +1,6 @@
 ﻿using MetroPolisBusinessService;
 using MetroPolisDataService.Entities;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace MetroPolisCity.Controllers
         }
         [HttpGet]
         [Route("api/[[controller]]")]
+       
         public IActionResult GetActivities()
         {
             return Ok(_activityservice.GetActivities());
