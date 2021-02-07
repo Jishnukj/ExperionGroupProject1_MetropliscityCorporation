@@ -84,3 +84,16 @@ input[required].ng-invalid:not(.required-invalid) {
   border-right: 5px solid #37ad79;
 }
 
+.sucessed{
+  padding: 10px;
+  background-color: #2ce433;
+}
+.failed{
+  padding: 10px;
+  background-color: #eb1414;
+}
+.close{
+  background-color: rgb(155, 147, 147);
+  float: right;
+  border: transparent;
+}
