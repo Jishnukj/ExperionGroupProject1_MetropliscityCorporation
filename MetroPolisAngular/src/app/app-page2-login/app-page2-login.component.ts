@@ -1,23 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import {ItemService} from '../Services/item.service';
+import { FormGroup,FormControl } from '@angular/forms';
 @Component({
   selector: 'app-app-page2-login',
   templateUrl: './app-page2-login.component.html',
   styleUrls: ['./app-page2-login.component.css']
 })
-export class AppPage2LoginComponent implements OnInit {
-
-  constructor(private itemservice:ItemService) { }
-  services;
-  login;
-  ngOnInit(): void {
-    this.login=this.itemservice.login;
-    this.services=this.itemservice.services;
+export class AppPage2LoginComponent implements OnInit 
+{
+  myform:FormGroup;
+  
+  
+  
+  
+  ngOnInit()
+   {
+    this.myform = new FormGroup({
+      username: new FormControl(''),
+      password: new FormControl('')});
+   
   }
-  loginHide(){
-    this.itemservice.loginHide();
-    this.login=this.itemservice.login;
-    console.log(this.login); 
+   
+ onSubmit(my)
+{
+  if (this.myform.valid) 
+  {
+    console.log(my);
+    this.myform.reset();
   }
+}
+  
 
 }
