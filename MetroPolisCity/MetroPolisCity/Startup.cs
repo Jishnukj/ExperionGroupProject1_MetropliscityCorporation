@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Cors;
 
 namespace MetroPolisCity
 {
@@ -26,6 +27,7 @@ namespace MetroPolisCity
         }
 
         public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -38,10 +40,22 @@ namespace MetroPolisCity
             services.AddScoped<IActivityRepo, ActivityRepo>();
             services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IStreetRepo, StreetRepo>();
-            services.AddCors(c =>
+            services.AddCors(options =>
             {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+
+                var origins = "http://localhost:4200";
+                options.AddPolicy("CorsPolicy", builder => builder
+                .WithOrigins(origins)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
             });
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
+            //    .AllowAnyHeader()
+            //    .AllowCredentials());
+            //});
 
             services.AddDbContext<ApplicationDbContext>(
                    options => options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MetroDb;Trusted_Connection=True;"));
@@ -67,7 +81,8 @@ namespace MetroPolisCity
             app.UseRouting();
 
             app.UseAuthorization();
-            app.UseCors(options => options.AllowAnyOrigin());
+            app.UseCors("CorsPolicy");
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace MetroPolisCity.Controllers
 {
     [ApiController]
+
     public class ActivitesController : ControllerBase
     {
         private IActivityService _activityservice;
@@ -41,12 +42,14 @@ namespace MetroPolisCity.Controllers
 
         [HttpPost]
         [Route("api/[[controller]]/[[id]]")]
-        public IActionResult AddActivity(Activity activity)
-        {
-            _activityservice.Add(activity);
+        
 
-            return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" +
-                activity.Id, activity);
+        public bool AddActivity(Activity activity)
+        {
+            var p=_activityservice.Add(activity);
+            return p;
+           // return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" +
+            //    activity.Id, activity);
         }
 
         [HttpDelete]
