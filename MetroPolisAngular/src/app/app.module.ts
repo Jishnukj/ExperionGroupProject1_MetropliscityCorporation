@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 
@@ -15,6 +15,10 @@ import { AppPage2ActivityListComponent } from './app-page2-activity-list/app-pag
 import { AppPage3Component } from './app-page3/app-page3.component';
 import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-addactivity.component';
 
+import { ActivitiesComponent } from './activities/activities.component';
+import { ShowActComponent } from './activities/show-act/show-act.component';
+import { AddEditComponent } from './activities/add-edit/add-edit.component';
+import { SharedService } from './shared.service';
 
 
 @NgModule({
@@ -27,15 +31,19 @@ import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-
     AppPage2Component,
     AppPage2ActivityListComponent,
     AppPage3Component,
-    AppPage3AddactivityComponent
+    AppPage3AddactivityComponent,
+    ActivitiesComponent,
+    ShowActComponent,
+    AddEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
-  providers: [ItemService],
+  providers: [ItemService,SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
