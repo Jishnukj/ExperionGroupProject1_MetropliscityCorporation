@@ -22,6 +22,7 @@ import { SharedService } from './shared.service';
 import { AppPage3EditComponent } from './app-page3-edit/app-page3-edit.component';
 import { AppPageNavComponent } from './app-page-nav/app-page-nav.component';
 import { AppPage1Component } from './app-page1/app-page1.component';
+import { ShowactComponent } from './app-page2-activity-list/showact/showact.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { AppPage1Component } from './app-page1/app-page1.component';
     AppPage3EditComponent,
     AppPageNavComponent,
     AppPage1Component,
+    ShowactComponent,
     
   ],
   imports: [
