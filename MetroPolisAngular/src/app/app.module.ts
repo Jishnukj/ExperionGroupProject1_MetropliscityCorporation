@@ -20,6 +20,8 @@ import { ShowActComponent } from './activities/show-act/show-act.component';
 import { AddEditComponent } from './activities/add-edit/add-edit.component';
 import { SharedService } from './shared.service';
 import { AppPage3EditComponent } from './app-page3-edit/app-page3-edit.component';
+import { AppPageNavComponent } from './app-page-nav/app-page-nav.component';
+import { AppPage1Component } from './app-page1/app-page1.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { AppPage3EditComponent } from './app-page3-edit/app-page3-edit.component
     ShowActComponent,
     AddEditComponent,
     AppPage3EditComponent,
+    AppPageNavComponent,
+    AppPage1Component,
     
   ],
   imports: [

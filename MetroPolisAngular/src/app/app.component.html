@@ -1,41 +1,13 @@
 <head></head>
 <body>
-  <div id="page">
-    <div class="headarea">
-      <div id="heading" class="heading" >
-        <h1>Metro Polis City Corporation</h1>
-      </div>
-      <div id="subheads" class="subheads"></div>
-      <table class="menutable">
-        <th>
-          <a class="menu" href="#footer">About us</a>
-        </th>
-        <th>
-          <a (click)="serviceHide()" class="menu">Services</a>
-        </th>
-        <th>
-          <a class="menu" href="#guid">Guidlines</a>
-        </th>
-        <th>
-          <a class="menu" href="#footer">Contact us</a>
-        </th>
-      </table>
-    </div>
-    <div id="image" *ngIf="services">
-      <app-app-page1-image></app-app-page1-image>
-    </div>
-    <div id="guid" *ngIf="services">
-      <app-app-page1-citizenguid></app-app-page1-citizenguid>
-    </div>
-    <div id="footer" *ngIf="services">
-      <app-app-page1-footer></app-app-page1-footer>
-    </div>
-  </div>
+  <app-app-page-nav></app-app-page-nav>
+  <router-outlet></router-outlet>
+</body>
 
+    
  
     
    <!-- <app-app-page3></app-app-page3> -->
     
 
-  </body>
-
+  

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
 import {HttpClientModule,HttpClient} from '@angular/common/http';
+import { AppPage3Component } from '../app-page3/app-page3.component';
+import { Router} from '@angular/router';
 @Component({
   selector: 'app-app-page2-login',
   templateUrl: './app-page2-login.component.html',
@@ -12,7 +14,7 @@ export class AppPage2LoginComponent implements OnInit
   
   
   
-  constructor(private httpService: HttpClient) { }
+  constructor(private httpService: HttpClient, private router:Router ) { }
   ngOnInit()
    {
     this.myform = new FormGroup({
@@ -33,7 +35,7 @@ export class AppPage2LoginComponent implements OnInit
         console.log(my);
         this.user=my["username"];
         this.pass=my["password"];
-        
+        this.router.navigate(['AppPage3Component']);
         this.myform.reset();
       }
       this.flag=0;
