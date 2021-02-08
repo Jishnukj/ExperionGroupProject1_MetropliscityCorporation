@@ -19,6 +19,7 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { ShowActComponent } from './activities/show-act/show-act.component';
 import { AddEditComponent } from './activities/add-edit/add-edit.component';
 import { SharedService } from './shared.service';
+import { AppPage3EditComponent } from './app-page3-edit/app-page3-edit.component';
 
 
 @NgModule({
@@ -27,14 +28,16 @@ import { SharedService } from './shared.service';
     AppPage1CitizenguidComponent,
     AppPage1ImageComponent,
     AppPage1FooterComponent,
-    AppPage2LoginComponent,
+    AppPage2LoginComponent, 
     AppPage2Component,
     AppPage2ActivityListComponent,
     AppPage3Component,
     AppPage3AddactivityComponent,
     ActivitiesComponent,
     ShowActComponent,
-    AddEditComponent
+    AddEditComponent,
+    AppPage3EditComponent,
+    
   ],
   imports: [
     BrowserModule,
