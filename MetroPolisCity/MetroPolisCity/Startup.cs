@@ -1,7 +1,11 @@
+using MetroPolisBusinessService;
+using MetroPolisDataService;
+using MetroPolisDataService.Repo;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Cors;
 
 namespace MetroPolisCity
 {
@@ -22,12 +27,38 @@ namespace MetroPolisCity
         }
 
         public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddControllers();
+            services.AddScoped<IActivityService, ActivityService>();
+            services.AddScoped<IStreetService, StreetService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IActivityRepo, ActivityRepo>();
+            services.AddScoped<IUserRepo, UserRepo>();
+            services.AddScoped<IStreetRepo, StreetRepo>();
+            services.AddCors(options =>
+            {
+
+                var origins = "http://localhost:4200";
+                options.AddPolicy("CorsPolicy", builder => builder
+                .WithOrigins(origins)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            });
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
+            //    .AllowAnyHeader()
+            //    .AllowCredentials());
+            //});
+
+            services.AddDbContext<ApplicationDbContext>(
+                   options => options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=MetroDb;Trusted_Connection=True;"));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MetroPolisCity", Version = "v1" });
@@ -46,9 +77,11 @@ namespace MetroPolisCity
 
             app.UseHttpsRedirection();
 
+
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

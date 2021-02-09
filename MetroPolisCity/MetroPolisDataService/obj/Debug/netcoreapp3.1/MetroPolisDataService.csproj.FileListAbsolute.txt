@@ -34,3 +34,15 @@ C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisDataService\
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.dll
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.pdb
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.genruntimeconfig.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.deps.json
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.runtimeconfig.json
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.runtimeconfig.dev.json
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.dll
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.pdb
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.csprojAssemblyReference.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.AssemblyInfoInputs.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.AssemblyInfo.cs
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.csproj.CoreCompileInputs.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.dll
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.pdb
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.genruntimeconfig.cache

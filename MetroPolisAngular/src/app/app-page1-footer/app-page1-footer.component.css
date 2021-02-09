@@ -1,0 +1,15 @@
+.footer{
+    background-color: violet;
+    min-width: 1000px;
+    margin: auto 30px;
+    padding: 20px;
+}
+.footertable{
+    width: 100%;
+}
+.about,.contact{
+    padding: 20px;
+    width: 400px;
+   
+    align-items: center;
+}

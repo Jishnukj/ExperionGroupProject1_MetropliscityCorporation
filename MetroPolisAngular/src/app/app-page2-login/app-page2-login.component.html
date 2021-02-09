@@ -1,0 +1,15 @@
+<form [formGroup]="myform"
+(ngSubmit)="onSubmit(myform.value)"> 
+<div class="form-group">
+      <div class="login">    
+        <h2 class="myform-heading" >Log In</h2>
+        <p>
+        <input type="text" class="form-control" name="username" placeholder="UserName" required="" autofocus="" formControlName="username" /><br />
+        <br />
+        <input required  type="password" class="form-control" name="password" placeholder="Password" formControlName="password"/>  <br />    
+        <br />
+        <button type="submit" class= "btn btn-primary" [disabled]="!myform.valid" routerLink="./Admin">Login</button> 
+        </p> 
+      </div>  
+</div>
+</form>

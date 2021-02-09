@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MetroPolisDataService.Repo
 {
-    class StreetRepo:IStreetRepo
+     public class StreetRepo:IStreetRepo
     {
         private readonly ApplicationDbContext _dbContext;
         public StreetRepo(ApplicationDbContext dbContext)

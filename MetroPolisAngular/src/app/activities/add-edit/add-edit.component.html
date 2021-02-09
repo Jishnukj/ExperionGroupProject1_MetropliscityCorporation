@@ -1,0 +1,25 @@
+<div class="form-group row">
+
+  <label class="col-sm 2 col-form-label">Activity Name</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" [(ngModel)]="Name"
+    placeholder="Enter Activity Name">
+    <input type="text" class="form-control" [(ngModel)]="Id"
+    placeholder="Enter Activity ID">
+    <input type="text" class="form-control" [(ngModel)]="date"
+    placeholder="Enter Date">
+    <input type="text" class="form-control" [(ngModel)]="streetId"
+    placeholder="Enter Street ID">
+    <input type="text" class="form-control" [(ngModel)]="streetName"
+    placeholder="Enter Alternative Street Name">
+    <input type="text" class="form-control" [(ngModel)]="description"
+    placeholder="Enter Description">
+  </div>
+</div>
+
+<button (click)="addActivity()" class="btn btn-primary">
+Add
+</button>
+<button (click)="updateActivity()" class="btn btn-primary">
+Update
+</button>

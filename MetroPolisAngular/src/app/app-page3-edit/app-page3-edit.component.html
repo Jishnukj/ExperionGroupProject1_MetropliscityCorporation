@@ -1,0 +1,150 @@
+
+<div class="page">
+    <header>
+        <h3>Edit Activity</h3>
+      </header> 
+      <form 
+      [formGroup]="myform" 
+      (ngSubmit)="onSubmit(myform.value)">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-25">
+            <label for="id"> Activity Id </label><br>
+          </div>
+          <div class="col-75"></div>
+            <input required type="text"  name="id" class="form-control" formControlName="id">
+      <br><br>
+          </div>
+        </div>
+      
+      
+        <div class="form-group">
+          <div class="row">
+            <div class="col-25">
+              <label for="Name"> Name </label><br>
+            </div>
+            <div class="col-75"></div>
+              <input required type="text"  name="Name" class="form-control" formControlName="name">
+        <br><br>
+            </div>
+          </div>
+       
+        <div class="form-group">
+          <div class="row">
+            <div class="col-25">
+        <label for="Type"> Type </label>
+            </div>
+            <div class="col-75"></div>
+        <select id="activity-type"  name="Type" class="form-control" formControlName="type">
+          <option value="Emergency">Emergency</option>
+          <option value="Periodic">Periodic</option>
+        </select>
+        </div>
+        </div>
+        <br><br>
+      
+        <div class="form-group">
+          <div class="row">
+            <div class="col-25">
+        <label for="Description"> Description </label><br>
+            </div>
+            <div class="col-75"></div>
+        <textarea  id="Description"  name="Description" cols="30" rows="8" placeholder="Write Something..." class="form-control" formControlName="description" ></textarea>
+        <br><br>
+        </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="row">
+            <div class="col-25">
+          <label for="StreetName">Street Name </label><br>
+          </div>
+          <div class="col-75"></div>
+          <input required type="text"  name="StreetName" class="form-control" formControlName="strname">
+          <br><br>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="row">
+            <div class="col-25">
+          <label for="Date">Date of Activity </label><br>
+           </div>
+          <input required id="Date"  type="date"  name="Date" class="form-control" formControlName="date">
+          <div class="col-75"></div>
+          <br><br>
+          </div>
+        </div>
+        
+      
+          <div class="form-group">
+            <label for="Type"> Is street closed? </label>
+            <input type="radio" id="True"  name="Isstreetclosed"  value="True" class="form-control" formControlName="Isstreetclosed">
+            <label for="Type">Yes</label>
+            <input type="radio" id="False"  name="Isstreetclosed"  value="False" class="form-control" formControlName="Isstreetclosed">
+            <label for="Type"> No </label>
+            </div>
+            <br><br>
+      
+          <button type="submit" class="btn btn-primary" [disabled]="!myform.valid">Edit</button>
+      </form>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!--<form>
+        <div class="form-group">
+          <label for="Id">Id</label>
+          <input id="Id"  type="text"  class="form-control">
+       </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input id="Name"  type="text"  class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="Type">Type</label>
+          <input id="Type" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="Description">Description</label>
+          <textarea id="Description" cols="30" rows="8" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="StreetId">Street Id</label>
+          <input id="StreetId"  type="text"  class="form-control">
+       </div>
+       <div class="form-group">
+        <label for="StreetName">Street Name</label>
+        <input id="StreetName"  type="text"  class="form-control">
+       </div>
+       <div class="form-group">
+        <label for="IsStreetClosed">Is Street Closed?</label>
+        <input id="IsStreetClosed"  type="text"  class="form-control">
+       </div>
+       <div class="form-group">
+        <label for="Date">Date</label>
+        <input id="Date"  type="text"  class="form-control">
+       </div>
+        <button class="btn btn-primary">Add</button>
+      </form>-->
+</div>

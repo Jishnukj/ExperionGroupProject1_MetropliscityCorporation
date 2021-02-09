@@ -1,0 +1,26 @@
+
+
+
+
+<table class = "table table-striped">
+  <thead>
+      <tr>
+          <th>Date</th>
+          <th>Activity ID</th>
+          <th>Activity Name</th>
+          <th>Street Closed</th>
+          <th>Street Name</th>
+          <th>Activity Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let dataItem of ActivityList">
+          <td>{{dataItem.date}}</td>
+          <td>{{dataItem.id}}</td>
+          <td>{{dataItem.name}}</td>
+          <td>{{dataItem.isStreetClosed}}</td>
+          <td>{{dataItem.streetName}}</td>
+          <td>{{dataItem.description}}</td>
+      </tr>
+  </tbody>
+</table>

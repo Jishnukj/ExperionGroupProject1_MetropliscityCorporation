@@ -34,3 +34,15 @@ C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisBusinessServ
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CopyComplete
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
 C:\Users\joshg\OneDrive\Desktop\Metropolis\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.deps.json
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisDataService.dll
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisDataService.pdb
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csprojAssemblyReference.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.AssemblyInfoInputs.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.AssemblyInfo.cs
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CoreCompileInputs.cache
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CopyComplete
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
+C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
