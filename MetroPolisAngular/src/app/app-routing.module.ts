@@ -9,6 +9,7 @@ import { AppPage3Component } from './app-page3/app-page3.component';
 
 const routes: Routes = [
   {path:"", component:AppPage1Component},
+  {path:"Admin/Home",component:AppPage1Component},
   {path:"Guidelines", component:AppPage1CitizenguidComponent},
   {path:"AboutUs", component:AppPage1FooterComponent},
   {path:"ContactUs", component:AppPage1FooterComponent},

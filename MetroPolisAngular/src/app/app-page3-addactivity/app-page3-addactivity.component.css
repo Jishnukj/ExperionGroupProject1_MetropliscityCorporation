@@ -97,3 +97,7 @@ input[required].ng-invalid:not(.required-invalid) {
   float: right;
   border: transparent;
 }
+.page{
+  padding: 120px;
+  background-color: rgb(192, 189, 189);
+}

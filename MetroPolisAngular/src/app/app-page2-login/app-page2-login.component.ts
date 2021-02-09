@@ -35,7 +35,7 @@ export class AppPage2LoginComponent implements OnInit
         console.log(my);
         this.user=my["username"];
         this.pass=my["password"];
-        this.router.navigate(['AppPage3Component']);
+        // this.router.navigate(['AppPage3Component']);
         this.myform.reset();
       }
       this.flag=0;
@@ -51,6 +51,7 @@ export class AppPage2LoginComponent implements OnInit
            console.log("sucess");
            this.flag=1
            // add routing here
+           this.router.navigate(['AppPage3Component']);
           } 
          }
         }

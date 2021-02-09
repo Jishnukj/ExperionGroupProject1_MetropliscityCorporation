@@ -83,5 +83,9 @@ input[type=text],select, textarea{
   input[required].ng-invalid:not(.required-invalid) {
     border-right: 5px solid #37ad79;
   }
+  .page{
+    padding: 200px;
+    background-color: #b8bdbb;
+  }
 
   
