@@ -52,9 +52,9 @@ export class AppPage3AddactivityComponent implements OnInit {
           console.log(data);
           if(data==true){
             this.sucess=true;
-          }else if(data==false)
+          }else if(data==false){
             this.sucess=false;
-            this.fail=true;
+            this.fail=true;}
          }  
       );
 
