@@ -13,5 +13,6 @@ namespace MetroPolisBusinessService
         bool Add(Activity newActivity);
         bool Update(Activity activityChange, int id);
         bool Delete(int id);
+        List<Activity> GetSorted();
     }
 }

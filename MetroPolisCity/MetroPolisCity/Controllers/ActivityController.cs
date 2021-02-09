@@ -26,6 +26,12 @@ namespace MetroPolisCity.Controllers
         {
             return Ok(_activityservice.GetActivities());
         }
+        [HttpGet]
+        [Route("api/sorted")]
+        public IActionResult GetSorted()
+        {
+            return Ok(_activityservice.GetSorted());
+        }
 
         [HttpGet]
         [Route("api/[[controller]]/[[id]]")]
