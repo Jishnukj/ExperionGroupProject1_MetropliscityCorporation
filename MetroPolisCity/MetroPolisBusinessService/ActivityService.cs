@@ -40,6 +40,16 @@ namespace MetroPolisBusinessService
 
             }).ToList();
         }
+        public List<Activity> GetSorted()
+        {
+            var activities = _activityRepository.GetAllActivities();
+         
+            var sort = activities.OrderByDescending(s => s.IsStreetClosed).ThenBy(s => s.StreetName).ThenBy(d => d.Date);
+            var datefilter1 = sort.Where(s => s.Date.Date >= DateTime.Now.Date);
+            var datefilter = sort.Where(s => s.Date.Date <= DateTime.Now.Date.AddDays(5));
+            return datefilter.ToList();
+
+        }
         public ActivityDto GetActivity(int id)
         {
             var activity = _activityRepository.GetActivity(id);

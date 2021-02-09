@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SharedService} from 'src/app/shared.service'
+import {SharedService} from 'src/app/shared.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-showact',
   templateUrl: './showact.component.html',
@@ -7,7 +8,7 @@ import {SharedService} from 'src/app/shared.service'
 })
 export class ShowactComponent implements OnInit {
 
-  constructor(private service: SharedService) { }
+  constructor(private http:HttpClient) { }
 
   ActivityList:any=[]
 
@@ -16,7 +17,7 @@ export class ShowactComponent implements OnInit {
   }
 
   refreshActList(){
-    this.service.getActList().subscribe(data=>{
+    this.http.get("https://localhost:44304/api/sorted").subscribe(data=>{
       this.ActivityList=data;
     });
 
