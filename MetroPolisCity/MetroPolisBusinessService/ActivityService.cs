@@ -93,9 +93,10 @@ namespace MetroPolisBusinessService
         {
             List<Activity> data = new List<Activity>();
             data = _activityRepository.GetAllActivities(); // fetch the entire database
+            int name = 0;
             int Total = data.Where(x => x.Date == New_data.Date).Count();
             int count = data.Where(x => x.Date == New_data.Date && New_data.IsStreetClosed==true).Count();
-
+            name = data.Where(x => x.Name == New_data.Name && x.Date == New_data.Date).Count();
             if (Total >= 15)
             {
                 //total is greater than 15
@@ -104,6 +105,9 @@ namespace MetroPolisBusinessService
             else if (count >= 6)
             {
                 //Closed street count is greater than 6
+                return false;
+            }else if (name > 0)
+            {
                 return false;
             }
             else

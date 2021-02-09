@@ -3,11 +3,13 @@
     height: 50px;
     padding: 10px;
     min-width: 300px;
+    
 }
 .menu{
     width: 200px;
 	height: 30px;
 	margin: 15px;
+    margin-top: 25px;
 	float: left;
 	border-width: 0;
 	font-weight: bold;
@@ -16,7 +18,7 @@
 .headarea{
     
     height: 130px;
-    background-color: yellowgreen;
+    background-color: rgb(224, 226, 226);
     margin: auto 30px;
     padding: 20px;
     min-width: 1000px;
@@ -27,4 +29,6 @@
 }
 .Home{
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
 }

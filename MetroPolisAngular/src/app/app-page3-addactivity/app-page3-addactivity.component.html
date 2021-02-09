@@ -5,7 +5,7 @@
   
   <div *ngIf="fail">
     <div *ngIf="!sucess" class="failed" role="alert2">
-      <strong>Failed</strong> Maximum no:of activities per day is 15 and Maximum closed Streets per day is 6
+      <strong>Failed</strong> Invalid.... Maximum no:of activities per day is 15 , Maximum closed Streets per day is 6 and unique activity name allowed for a day
       <button type="button" (click)="closealert()" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -68,28 +68,33 @@
       <br><br>
       </div>
     </div>
-    
+    <br><br>
     <div class="form-group">
       <div class="row">
         <div class="col-25">
-      <label for="Date">Date of Activity </label><br>
+      <label for="Date">Date of Activity </label>
        </div>
       <input required id="Date"  type="date"  name="Date" class="form-control" formControlName="date">
       <div class="col-75"></div>
       <br><br>
       </div>
+      <br><br>
     </div>
     
   
-      <div class="form-group">
-        <label for="Type"> Is street closed? </label>
-        <input type="radio" id="True"  name="isStreetClosed"  value="True" class="form-control" formControlName="isStreetClosed">
-        <label for="Type">Yes</label>
-        <input type="radio" id="False"  name="isStreetClosed"  value="False" class="form-control" formControlName="isStreetClosed">
-        <label for="Type"> No </label>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-25">
+    <label for="isStreetClosed"> Is Street Closed ? </label>
         </div>
-        <br><br>
-  
+        <div class="col-75"></div>
+    <select id="isStreetClosed"  name="Type" class="form-control" formControlName="isStreetClosed">
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select>
+    </div>
+    </div>
+    <br><br>
       <button type="submit" class="btn btn-primary" [disabled]="!myform.valid">Add</button>
   </form>
 </div>

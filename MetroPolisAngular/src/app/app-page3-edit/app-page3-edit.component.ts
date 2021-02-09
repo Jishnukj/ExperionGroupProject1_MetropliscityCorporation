@@ -11,7 +11,8 @@ export class AppPage3EditComponent implements OnInit {
 
   myform:FormGroup
   constructor(private httpService: HttpClient) { }
-
+  sucess=false;
+  fail=false;
   url="https://localhost:44304/api/[controller]/[id]?id=";
   ngOnInit() {
     this.myform = new FormGroup({
@@ -36,14 +37,19 @@ onSubmit(addActivity) {
         
         
       "name": addActivity["name"],
-      "streetName": addActivity["streetName"],
-      "isStreetClosed":(addActivity["isStreetClosed"]=="true")?true:false,
+      "streetName": addActivity["strname"],
+      "isStreetClosed":(addActivity["Isstreetclosed"]=="true")?true:false,
       "type": addActivity["type"],
       "description": addActivity["description"],
       "date":date
     }
     ).subscribe(data=>{
       console.log(data);
+      if(data!=null){
+        this.sucess=true;
+      }else if(data==false){
+        this.sucess=false;
+        this.fail=true;}
     });
   }
 }
