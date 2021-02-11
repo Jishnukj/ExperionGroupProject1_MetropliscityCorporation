@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {}
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
         "projectName": "MetroPolisBusinessService",
-        "projectPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
-        "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\obj\\",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj",
+        "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
-                "projectPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj"
+              "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
+                "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
         "projectName": "MetroPolisDataService",
-        "projectPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
-        "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisDataService\\obj\\",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\gitbackup\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
