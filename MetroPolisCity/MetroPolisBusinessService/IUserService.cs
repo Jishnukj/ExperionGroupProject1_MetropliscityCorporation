@@ -9,5 +9,6 @@ namespace MetroPolisBusinessService
     {
         List<User> GetUsers();
         User GetUser(int id);
+        bool checkAdmin(User user);
     }
 }

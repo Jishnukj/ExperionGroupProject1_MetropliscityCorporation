@@ -1,4 +1,5 @@
 ﻿using MetroPolisBusinessService;
+using MetroPolisDataService.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,17 @@ namespace MetroPolisCity.Controllers
                 return Ok(user);
             }
             return NotFound($"User with Id: {id} was not found");
+        }
+        [HttpPost]
+        [Route("api/[[controller]]")]
+
+
+        public bool checkadmin(User user)
+        {
+            var p = _userservice.checkAdmin(user);
+            return p;
+            // return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" +
+            //    activity.Id, activity);
         }
     }
 }
