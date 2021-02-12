@@ -22,46 +22,27 @@ export class AppPage2LoginComponent implements OnInit
       password: new FormControl('')});
    
   }
-
-  pass="";
-  user="";
-  i=0;
-  flag=0;
-   
-    onSubmit(my)
-    {
-      if (this.myform.valid) 
+  onSubmit(my){
+    if (this.myform.valid) 
       {
-        console.log(my);
-        this.user=my["username"];
-        this.pass=my["password"];
-        // this.router.navigate(['AppPage3Component']);
         this.myform.reset();
       }
-      this.flag=0;
-    this.httpService.get('https://localhost:44304/api/User/api/User').subscribe(  
-     data => {  
-       
-       console.log(data);
-       console.log(data[1]["userId"]);
-       for(this.i=0;data[this.i]!=null; this.i+=1)
+      this.httpService.post('https://localhost:44304/api/User/api/[controller]',
         {
-         if(data[this.i]["userName"]==this.user){
-          if(data[this.i]["password"]==this.pass){
-           console.log("sucess");
-           this.flag=1
-           // add routing here
-           this.router.navigate(['AppPage3Component']);
-          } 
-         }
-        }
-        if(this.flag!=1){
-          console.log("fail");
-        } 
-     }  
-   );  
-   
   
-
-}
+          "userName": my["username"],
+          "password": my["password"]
+        }
+      ).subscribe(
+        (res:any)=>{
+          localStorage.setItem('token',res.token);
+          this.router.navigate(['AppPage3Component']);
+        },
+        err=>{
+            alert("Incorrect username or password");
+        }
+      )
+  }
+ 
+ 
 }
