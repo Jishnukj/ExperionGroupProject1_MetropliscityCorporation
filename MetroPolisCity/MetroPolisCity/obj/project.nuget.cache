@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "elr74A7ox5f5hvD8myRxI2ODTZZup1+QouFKa/100/OjcASDTzVZVDjV1mbcUjGpV/xvyyMK19DJDTs/om7zhA==",
+  "dgSpecHash": "zMiN0oXhsluB+9Fx6bRtEUEOXylVY+YoWqs5KNlVdH6RfysAGJQM4fCidTH0fbSB2iwKIgPdjIHoozHjLsLqiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+  "projectFilePath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jishnu.kj\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.7\\microsoft.aspnet.cors.5.2.7.nupkg.sha512",
     "C:\\Users\\jishnu.kj\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

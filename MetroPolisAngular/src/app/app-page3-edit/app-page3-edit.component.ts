@@ -43,15 +43,18 @@ onSubmit(addActivity) {
       "description": addActivity["description"],
       "date":date
     }
-    ).subscribe(data=>{
-      console.log(data);
-      if(data!=null){
-        this.sucess=true;
-      }else if(data==false){
+    ).subscribe((res:any)=>{
+      this.sucess=true;
+    },
+    err=>{
+      this.fail=true;
+          }
+              
+          );
+        }
+      }
+      closealert(){
         this.sucess=false;
-        this.fail=true;}
-    });
-  }
-}
-
+        this.fail=false;
+      }
 }

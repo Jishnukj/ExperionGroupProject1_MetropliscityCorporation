@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {}
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
+    "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
         "projectName": "MetroPolisDataService",
-        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
+        "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\MetroPolisDataService.csproj",
         "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\obj\\",
+        "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisDataService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",

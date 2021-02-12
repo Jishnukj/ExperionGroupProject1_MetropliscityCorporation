@@ -8360,11 +8360,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
+      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
       "projectName": "XunitTestMetroPolis",
-      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
+      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\XunitTestMetroPolis.csproj",
       "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\obj\\",
+      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\XunitTestMetroPolis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8381,8 +8381,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
-              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
+            "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\friday\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
             }
           }
         }
