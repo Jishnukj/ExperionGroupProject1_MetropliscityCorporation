@@ -78,12 +78,17 @@ namespace MetroPolisCity.Controllers
         {
             var existingactivity = _activityservice.GetActivity(id);
 
-            if (activity != null)
+            if (existingactivity != null)
             {
                 activity.Id = existingactivity.Id;
                 _activityservice.Update(activity,id);
+                return Ok(activity);
             }
-            return Ok(activity);
+            else
+            {
+                return BadRequest("invalid id");
+            }
+            
         }
     }
 }

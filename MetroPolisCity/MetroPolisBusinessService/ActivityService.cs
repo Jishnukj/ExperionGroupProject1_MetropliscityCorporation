@@ -53,17 +53,22 @@ namespace MetroPolisBusinessService
         public ActivityDto GetActivity(int id)
         {
             var activity = _activityRepository.GetActivity(id);
-            return  new ActivityDto
+
+            if (activity != null)
             {
-                Id = activity.Id,
-                Name = activity.Name,
-                StreetId = activity.StreetId,
-                StreetName = activity.StreetName,
-                IsStreetClosed = activity.IsStreetClosed,
-                Type = activity.Type,
-                Date = activity.Date,
-                Description = activity.Description
-            };
+                return new ActivityDto
+                {
+                    Id = activity.Id,
+                    Name = activity.Name,
+                    StreetId = activity.StreetId,
+                    StreetName = activity.StreetName,
+                    IsStreetClosed = activity.IsStreetClosed,
+                    Type = activity.Type,
+                    Date = activity.Date,
+                    Description = activity.Description
+                };
+            }
+            return null;
 
         }
 
