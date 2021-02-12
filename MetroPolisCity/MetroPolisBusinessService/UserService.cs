@@ -27,21 +27,5 @@ namespace MetroPolisBusinessService
             User user = _userRepository.GetUser(id);
             return user;
         }
-        public bool checkAdmin(User user)
-        {
-            User p= _userRepository.GetUserByName(user.UserName);
-            if (p != null)
-            {
-                if(p.UserName==user.UserName && p.Password == user.Password)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            return false;
-        }
     }
 }

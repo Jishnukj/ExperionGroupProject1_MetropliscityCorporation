@@ -9,6 +9,5 @@ namespace MetroPolisDataService.Repo
     {
         List<User> GetAllUsers();
         User GetUser(int id);
-        User GetUserByName(string name);
     }
 }

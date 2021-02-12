@@ -30,22 +30,6 @@ namespace XunitTestMetroPolis
             Assert.Equal(expected.Count, actual.Count);
             Assert.Equal(expected[1].Name, actual[1].Name);
         }
-
-        [Fact]
-        public void GetSorted_Valid()
-        {
-            mockActivityRepo.Setup(x => x.GetAllActivities())
-                .Returns(GetSamples());
-
-            var cls = new ActivityService(mockActivityRepo.Object);
-
-            var result = cls.GetSorted();
-            Assert.True(result != null);
-            Assert.True(result[0].IsStreetClosed == true);
-            Assert.True(result[1].StreetName == "kandassankadavu");
-
-        }
-
         [Fact]
         public void GetActivity_Valid()
         {
@@ -168,7 +152,7 @@ namespace XunitTestMetroPolis
                     Id=2,
                     Date=DateTime.Now,
                     Description="nothing",
-                    IsStreetClosed=true,
+                    IsStreetClosed=false,
                     Name="Thrissur",
                     StreetId=213,
                     StreetName="Thrissur",

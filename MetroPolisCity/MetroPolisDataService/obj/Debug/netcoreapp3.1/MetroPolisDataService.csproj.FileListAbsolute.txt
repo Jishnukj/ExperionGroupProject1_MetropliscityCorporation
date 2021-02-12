@@ -46,15 +46,3 @@ C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.dll
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.pdb
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.genruntimeconfig.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.deps.json
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.runtimeconfig.json
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.runtimeconfig.dev.json
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.dll
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\bin\Debug\netcoreapp3.1\MetroPolisDataService.pdb
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.csprojAssemblyReference.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.AssemblyInfoInputs.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.AssemblyInfo.cs
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.csproj.CoreCompileInputs.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.dll
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.pdb
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisDataService\obj\Debug\netcoreapp3.1\MetroPolisDataService.genruntimeconfig.cache

@@ -46,15 +46,3 @@ C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\D
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CopyComplete
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
 C:\Users\jishn\Documents\ZZgithub\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.deps.json
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisDataService.dll
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\bin\Debug\netcoreapp3.1\MetroPolisDataService.pdb
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csprojAssemblyReference.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.AssemblyInfoInputs.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.AssemblyInfo.cs
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CoreCompileInputs.cache
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.csproj.CopyComplete
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.dll
-C:\Users\jishnu.kj\Documents\forgit\gitbackup\ExperionGroupProject1_MetropliscityCorporation\MetroPolisCity\MetroPolisBusinessService\obj\Debug\netcoreapp3.1\MetroPolisBusinessService.pdb
