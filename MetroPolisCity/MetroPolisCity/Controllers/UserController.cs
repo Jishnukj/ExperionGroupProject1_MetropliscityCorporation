@@ -1,8 +1,13 @@
 ﻿using MetroPolisBusinessService;
+using MetroPolisDataService.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace MetroPolisCity.Controllers
@@ -35,6 +40,36 @@ namespace MetroPolisCity.Controllers
                 return Ok(user);
             }
             return NotFound($"User with Id: {id} was not found");
+        }
+        [HttpPost]
+        [Route("api/[[controller]]")]
+
+
+        public async Task<IActionResult> checkadmin(User user)
+        {
+            var p = _userservice.checkAdmin(user);
+            if (p == true)
+            {
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
+                        new Claim("Username",user.UserName.ToString())
+                    }),
+                    Expires = DateTime.UtcNow.AddMinutes(5),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes("123433231324354343434")), SecurityAlgorithms.HmacSha256Signature)
+                };
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+                var token = tokenHandler.WriteToken(securityToken);
+                return Ok(new { token });
+            }
+            else
+            {
+                return BadRequest(new { message = "invalid" });
+            }
+            
         }
     }
 }

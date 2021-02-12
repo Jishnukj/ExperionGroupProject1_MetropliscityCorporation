@@ -22,5 +22,10 @@ namespace MetroPolisDataService.Repo
             User user = _dbContext.Users.Where(e => e.UserId == id).FirstOrDefault();
             return user;
         }
+        public User GetUserByName(string name)
+        {
+            User user = _dbContext.Users.Where(e => e.UserName == name).FirstOrDefault();
+            return user;
+        }
     }
 }

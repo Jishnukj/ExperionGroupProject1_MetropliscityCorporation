@@ -11,5 +11,7 @@ export class AppPageNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onLogout(){
+    localStorage.removeItem('token');
+  }
 }

@@ -7591,19 +7591,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jishn\\.nuget\\packages\\": {}
+    "C:\\Users\\jishnu.kj\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "projectUniqueName": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
       "projectName": "MetroPolisCity",
-      "projectPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
-      "packagesPath": "C:\\Users\\jishn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisCity\\obj\\",
+      "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\MetroPolisCity.csproj",
+      "packagesPath": "C:\\Users\\jishnu.kj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisCity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jishn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jishnu.kj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7617,8 +7617,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
-              "projectPath": "C:\\Users\\jishn\\Documents\\ZZgithub\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
+            "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj": {
+              "projectPath": "C:\\Users\\jishnu.kj\\Documents\\forgit\\jwt\\ExperionGroupProject1_MetropliscityCorporation\\MetroPolisCity\\MetroPolisBusinessService\\MetroPolisBusinessService.csproj"
             }
           }
         }
@@ -7674,7 +7674,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   },

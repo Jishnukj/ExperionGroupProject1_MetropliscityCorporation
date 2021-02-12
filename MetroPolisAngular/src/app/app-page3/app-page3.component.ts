@@ -19,4 +19,7 @@ export class AppPage3Component implements OnInit {
   loginHide(){
     this.itemservice.loginHide
   }
+  onLogout(){
+    localStorage.removeItem('token');
+  }
 }

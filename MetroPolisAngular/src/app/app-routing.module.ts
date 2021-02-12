@@ -6,6 +6,7 @@ import { AppPage1Component } from './app-page1/app-page1.component';
 import { AppPage2Component } from './app-page2/app-page2.component';
 import { AppPage3AddactivityComponent } from './app-page3-addactivity/app-page3-addactivity.component';
 import { AppPage3Component } from './app-page3/app-page3.component';
+import {AuthGuard} from './auth/auth.guard'
 
 const routes: Routes = [
   {path:"", component:AppPage1Component},
@@ -14,10 +15,11 @@ const routes: Routes = [
   {path:"AboutUs", component:AppPage1FooterComponent},
   {path:"ContactUs", component:AppPage1FooterComponent},
   {path:"Services", component:AppPage2Component, children:[
-  {path:"Admin", component:AppPage3Component}
-  ]},
+    {path:"Admin", component:AppPage3Component}
+    ]},
   {path:"Home", component:AppPage1Component},
-  {path:"**", component:AppPage3Component}
+  {path:"**", component:AppPage3Component,
+    canActivate:[AuthGuard]}
 ];
 
 @NgModule({
