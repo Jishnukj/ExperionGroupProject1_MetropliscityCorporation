@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
-import {HttpClientModule,HttpClient} from '@angular/common/http';
+import {HttpClientModule,HttpClient,HttpHeaders} from '@angular/common/http';
 
 @Component({
   selector: 'app-app-page3-edit',
@@ -32,6 +32,9 @@ onSubmit(addActivity) {
     console.log(addActivity);
     this.myform.reset();
     var date = new Date(addActivity["date"]);
+    var t=localStorage.getItem('token');
+     var headers_object = new HttpHeaders().set("Authorization", "Bearer " + t);
+    
     this.httpService.patch(`${this.url}${addActivity["id"]}`,
     {
         
@@ -42,7 +45,7 @@ onSubmit(addActivity) {
       "type": addActivity["type"],
       "description": addActivity["description"],
       "date":date
-    }
+    },{headers:headers_object}
     ).subscribe((res:any)=>{
       this.sucess=true;
     },

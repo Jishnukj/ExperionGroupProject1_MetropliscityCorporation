@@ -1,5 +1,7 @@
 ﻿using MetroPolisBusinessService;
 using MetroPolisDataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -45,7 +47,7 @@ namespace MetroPolisCity.Controllers
             }
             return NotFound($"Activity with Id: {id} was not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("api/[[controller]]/[[id]]")]
         
@@ -57,7 +59,7 @@ namespace MetroPolisCity.Controllers
            // return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" +
             //    activity.Id, activity);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete]
         [Route("api/[[controller]]/[[id]]")]
         public IActionResult DeleteActivity(int id)
@@ -71,7 +73,7 @@ namespace MetroPolisCity.Controllers
             }
             return NotFound($"Activity with Id: {id} was not found");
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPatch]
         [Route("api/[[controller]]/[[id]]")]
         public IActionResult EditActivity(Activity activity,int id)

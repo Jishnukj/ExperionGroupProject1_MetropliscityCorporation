@@ -1,5 +1,7 @@
 ﻿using MetroPolisBusinessService;
 using MetroPolisDataService.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -22,13 +24,14 @@ namespace MetroPolisCity.Controllers
         {
             _userservice = userService;
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("api/[controller]")]
         public IActionResult GetUsers()
         {
             return Ok(_userservice.GetUsers());
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("api/[[controller]]/[[id]]")]
         public IActionResult GetUser(int id)
