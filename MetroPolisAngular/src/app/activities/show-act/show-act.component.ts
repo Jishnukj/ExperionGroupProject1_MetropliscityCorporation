@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SharedService} from 'src/app/shared.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-show-act',
@@ -41,7 +41,10 @@ export class ShowActComponent implements OnInit {
   deleteClick(item){
     if(confirm('Are you sure??')){
       console.log("showactservice",item.id);
-      this.http.delete(`${this.url}${item.id}`).subscribe(
+      var t=localStorage.getItem('token');
+     var headers_object = new HttpHeaders().set("Authorization", "Bearer " + t);
+    
+      this.http.delete(`${this.url}${item.id}`,{headers:headers_object}).subscribe(
         data=>{
           console.log(data);
           this.refreshActList();

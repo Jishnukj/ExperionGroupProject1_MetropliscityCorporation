@@ -100,13 +100,15 @@ namespace MetroPolisCity
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MetroPolisCity v1"));
             }
 
-            app.UseHttpsRedirection();
+            
 
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            
             app.UseCors("CorsPolicy");
+            app.UseAuthorization();
+            app.UseHttpsRedirection();
 
             app.UseEndpoints(endpoints =>
             {

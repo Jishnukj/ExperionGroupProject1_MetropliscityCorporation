@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient,HttpHeaders} from '@angular/common/http';
 
 
 
@@ -35,7 +35,9 @@ export class AppPage3AddactivityComponent implements OnInit {
      this.fail=false; 
      this.sucess=false;
      var date = new Date(addActivity["date"]);
-
+     var t=localStorage.getItem('token');
+     console.log(t);
+     var headers_object = new HttpHeaders().set("Authorization", "Bearer " + t);
      this.httpService.post("https://localhost:44304/api/[controller]/[id]",
       {
         
@@ -46,7 +48,7 @@ export class AppPage3AddactivityComponent implements OnInit {
         "type": addActivity["type"],
         "description": addActivity["description"],
         "date":date
-      }
+      },{headers:headers_object}
       ).subscribe(
         data => {  
           console.log(data);
